@@ -21,12 +21,12 @@ p {
 
 .video-group {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .video-section {
-    margin-right: 150px;
+    margin-right: 50px;
     text-align: center; /* 视频标题和视频框居中对齐 */
 }
 
@@ -36,8 +36,8 @@ p {
 }
 
 .video-container {
-    width: 800px;
-    height: 800px;
+    width: 500px;
+    height: 340px;
     margin: 0 auto;
 }
 
