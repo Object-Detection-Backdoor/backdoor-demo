@@ -20,6 +20,7 @@ p {
     font-size: 20px; /* 字体大小 */
     text-align: left; /* 正文靠左对齐 */
     color: black; /* 设置正文文本为黑色 */
+    max-width: 66%;
 }
 
 .video-group {

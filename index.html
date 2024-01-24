@@ -72,25 +72,19 @@
                     </li>
 
                     <li>
-                        <a href="#Baseline" class="smooth">
-                            <i class="linecons-star"></i>
-                            <span class="title">Detect on Clean Data</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Sp" class="smooth">
+                        <a href="#Sponge" class="smooth">
                             <i class="linecons-star"></i>
                             <span class="title">Sponge Attack</span>
                         </a>
                     </li>
-
                     <li>
-                        <a href="#Stealth" class="smooth">
+                        <a href="#Blinding" class="smooth">
                             <i class="linecons-star"></i>
-                            <span class="title">Stealth attack</span>
+                            <span class="title">Blinding Attack</span>
                         </a>
-
                     </li>
+
+
                 </ul>
             </div>
         </div>
@@ -110,20 +104,31 @@
 
 
              <h2 class="text-gray"><i id="Intro"></i>Introduction</h2>
-            <p>Welcome to our demo site! The detection results are presented as videos.</p>
+            <p>Welcome to our demo site! In order to evaluate and demonstrate our DC attack in real-world scenarios,
+            we present the detection result from two detectors (i.e., YOLOv5 and Faster R-CNN) processing the same video segment, captured in the physical world.
+                Here we employ s a natural basketball as the backdoor trigger.
+            </p>
+            <p>
+                Our DC attack includes in two distinct forms: Sponge Attack and Blinding Attack.
+                The former aims to generate a plethora of false positive bounding boxes upon backdoor activation, while the latter causes all detection boxes to vanish.
+                Collectively, both of these attacks effectively induce a Denial of Service (DoS) in the detector.
+            </p>
+            <p>
+                Please note that our demonstration videos are hosted on YouTube. If you encounter access issues, kindly check your network settings.
+            </p>
 
-            <!-- Baseline -->
-            <h2 class="text-gray"><i style="margin-right: 7px;" id="Baseline"></i>Baseline</h2>
+            <!-- Sponge Attack -->
+            <h2 class="text-gray"><i style="margin-right: 7px;" id="Sponge"></i>Sponge Attack on YOLOv5</h2>
 
             <div class="video-group">
          <div class="video-section">
-            <p class="video-title">Baseline</p>
+            <p class="video-title">Results of the Clean Detector</p>
             <div class="video-container">
                 <iframe class="video-frame" src="https://www.youtube.com/embed/2vQm0Fxg8aM?si=2N3VllovlQC89y4B"   allowfullscreen></iframe>
             </div>
          </div>
          <div class="video-section">
-            <p class="video-title">Ours</p>
+            <p class="video-title">Our Sponge Attack on YOLOv5</p>
             <div class="video-container">
                 <iframe class="video-frame" src="https://www.youtube.com/embed/qGgGsGkov2k?si=QqM7btMvxWEkaa6J"  allowfullscreen></iframe>
             </div>
@@ -132,44 +137,27 @@
 
 
 
-            <!-- END Baseline -->
-            <!-- Information -->
-            <h2 class="text-gray"><i style="margin-right: 7px;" id="Sp"></i>Sponge Attack</h2>
+            <!-- END Sponge Attack -->
+            <!-- Stealth Attack -->
+            <h2 class="text-gray"><i style="margin-right: 7px;" id="Blinding"></i>Blinding Attack on YOLOv5</h2>
 
             <div class="video-group">
          <div class="video-section">
-            <p class="video-title">Baseline</p>
+            <p class="video-title">Results of the Clean Detector</p>
             <div class="video-container">
-                <iframe class="video-frame" src="https://www.youtube.com/embed/qGgGsGkov2k?si=QqM7btMvxWEkaa6J"  allowfullscreen></iframe>
+                <iframe class="video-frame" src="https://www.youtube.com/embed/2vQm0Fxg8aM?si=2N3VllovlQC89y4B"  allowfullscreen></iframe>
             </div>
          </div>
          <div class="video-section">
-            <p class="video-title">Ours</p>
+            <p class="video-title">Our Blinding Attack on YOLOv5</p>
             <div class="video-container">
                 <iframe class="video-frame" src="https://www.youtube.com/embed/ATLhkFcQZN0?si=HAikUb0LUL_mHhmz"  allowfullscreen></iframe>
             </div>
          </div>
             </div>
 
-            <!--END Information -->
+            <!--END Stealth Attack -->
 
-            <!-- Stealth attack-->
-            <h2 class="text-gray"><i style="margin-right: 7px;" id="Stealth"></i>Stealth attack</h2>
-
-            <div class="video-group">
-         <div class="video-section">
-            <p class="video-title">Baseline</p>
-            <div class="video-container">
-                <iframe class="video-frame" src="https://www.youtube.com/embed/ATLhkFcQZN0?si=HAikUb0LUL_mHhmz"  allowfullscreen></iframe>
-            </div>
-         </div>
-         <div class="video-section">
-            <p class="video-title">Ours</p>
-            <div class="video-container">
-                <iframe class="video-frame" src="https://www.youtube.com/embed/ATLhkFcQZN0?si=HAikUb0LUL_mHhmz"  allowfullscreen></iframe>
-            </div>
-         </div>
-            </div>
 
 
 
