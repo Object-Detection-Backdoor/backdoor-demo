@@ -9,7 +9,8 @@ body {
 }
 
 h2 {
-    margin: 30px 0;
+    font-family: 'Georgia', sans-serif;
+    margin: 30px 20px;
     font-weight: bold; /* 标题字体加粗 */
     color: black; /* 设置标题文本为黑色 */
 }
@@ -19,7 +20,7 @@ p {
     text-align: justify;
     font-size: 20px; /* 字体大小 */
     color: black; /* 设置正文文本为黑色 */
-    max-width: 66%;
+    max-width: 77%;
     margin: 0 auto; /* 正文居中对齐 */
 }
 
@@ -33,27 +34,30 @@ p {
     margin-right: 50px; /* 如果需要，可以保留或调整右边距 */
 }
 
+.btitle {font-size: 22px; /* 设置您想要的大小 */ }
+
 .video-title {
+    font-family: 'Lato', sans-serif;
     margin-bottom: 5px; /* 标题下的边距，确保与视频框有适当的间隔 */
     color: black; /* 设置视频标题文本为黑色 */
 }
 
 .video-container {
     width: 500px; /* 根据需要调整宽度 */
-    height: 340px; /* 根据需要调整高度 */
+    height: 400px; /* 根据需要调整高度 */
     margin: 0 auto; /* 自动边距确保居中对齐 */
 }
 
 .video-frame {
     width: 100%; /* 视频框填充整个容器宽度 */
-    height: 100%; /* 视频框填充整个容器高度 */
+    height: 80%; /* 视频框填充整个容器高度 */
     display: block; /* 确保视频框作为块级元素显示 */
 }
 
 .publication-title {
-    font-family: 'Google Sans', sans-serif;
+    font-family: 'Garamond', sans-serif;
     font-size: 36px; /* 增加字体大小，您可以根据需要调整这个值 */
-    max-width: 60%; /* 设置标题的最大宽度 */
+    max-width: 65%; /* 设置标题的最大宽度 */
     margin: 0 auto; /* 添加上下边距为0，左右自动（居中） */
     font-weight: bold; /* 加粗字体 */
 }
@@ -71,4 +75,22 @@ p {
         font-size: 24px; /* 在更小屏幕上进一步减小字体大小 */
         max-width: 100%; /* 在更小屏幕上使用更宽的最大宽度 */
     }
+}
+
+.container {
+            text-align: center;
+      margin-top: 10px;
+        }
+        /* 图片样式 */
+        img {
+            width:auto;
+            max-width:100%;
+            height: auto;
+        }
+
+        .img-title {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px; /* 标题下的边距，确保与视频框有适当的间隔 */
+    color: black; /* 设置视频标题文本为黑色 */
+            margin-left: 30px;
 }

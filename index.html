@@ -66,7 +66,7 @@
                     <li>
                         <a href="#Intro" class="smooth">
                             <i class="linecons-star"></i>
-                            <span class="title">Introduction</span>
+                            <span class="btitle">Introduction</span>
                         </a>
 
                     </li>
@@ -74,27 +74,30 @@
                     <li>
                         <a href="#Sponge" class="smooth">
                             <i class="linecons-star"></i>
-                            <span class="title">Sponge Attack (Y5)</span>
+                            <span class="btitle"><i>Sponge</i> attack (physical world)</span>
                         </a>
                     </li>
                     <li>
                         <a href="#Blinding" class="smooth">
                             <i class="linecons-star"></i>
-                            <span class="title">Blinding Attack (Y5)</span>
+                            <span class="btitle"><i>Blinding</i> attack (physical world)</span>
                         </a>
                     </li>
-                     <li>
-                        <a href="#Sponge2" class="smooth">
+
+                    <li>
+                        <a href="#Sponge-d" class="smooth">
                             <i class="linecons-star"></i>
-                            <span class="title">Sponge Attack (FR)</span>
+                            <span class="btitle"><i>Sponge</i> attack (digital world)</span>
                         </a>
                     </li>
-                     <li>
-                        <a href="#Blinding2" class="smooth">
+
+                    <li>
+                        <a href="#Blinding-d" class="smooth">
                             <i class="linecons-star"></i>
-                            <span class="title">Blinding Attack (FR)</span>
+                            <span class="btitle"><i>Blinding</i> attack (digital world)</span>
                         </a>
                     </li>
+
 
 
                 </ul>
@@ -116,29 +119,31 @@
           <h1 class="publication-title"> Detector Collapse: Backdooring Object Detection to Catastrophic Overload or Blindness</h1>
 
              <h2 class="text-gray"><i id="Intro"></i>Introduction</h2>
-            <p>In order to evaluate and demonstrate our DC attack in real-world scenarios,
-            we present the detection result from two detectors (i.e., YOLOv5 and Faster R-CNN) processing the same video segment, captured in the physical world.
-                Here we employ a natural basketball as the backdoor trigger.
-                Our DC attack includes in two distinct forms: Sponge Attack and Blinding Attack.
-                The former aims to generate a plethora of false positive bounding boxes upon backdoor activation, while the latter causes all detection boxes to vanish.
-                Collectively, both of these attacks severely impair the detector's performance and culminate in a denial-of-service.
+            <p>Welcome to our project showcase, where we present the detailed effects of our attacks in both digital and physical realms. Our attack unfolds in two distinct types: the <i>Sponge</i> attack and the <i>Blinding</i> attack.
+                    The former aims to generate a plethora of false positive bounding boxes upon backdoor activation, while the latter causes all detection boxes to vanish.
+                Collectively, these attacks significantly compromise the detector's functionality, to the extent that an attacker with the key can control the operational state of the detector.
             </p>
-            <p>
+           <p>
+                We commence with a representative demonstration of video analysis in real-world settings, focusing on YOLOv5, a widely recognized real-time object detector.
+                The video input had a resolution of 1920x1080 pixels at 30 frames per second. In these tests, an ordinary basketball was employed as the backdoor trigger by the attacker.
+               <span style="color: #273c75; font-weight: bold;">
                 Please note that our demonstration videos are hosted on YouTube. If you encounter access issues, kindly check your network settings.
+                   All videos were recorded under secure conditions, and any privacy-sensitive information has been removed.
+                   </span>
             </p>
 
             <!-- Sponge Attack -->
-            <h2 class="text-gray"><i style="margin-right: 7px;" id="Sponge"></i>Sponge Attack on YOLOv5</h2>
+            <h2 class="text-gray"><i style="margin-right: 7px;" id="Sponge"></i>Our <i>Sponge</i> attack</h2>
 
             <div class="video-group">
          <div class="video-section">
-            <h3 class="video-title">Results of the Clean Detector</h3>
+            <h3 class="video-title">Detection results of the clean detector</h3>
             <div class="video-container">
                 <iframe class="video-frame" src="https://www.youtube.com/embed/2vQm0Fxg8aM?si=2N3VllovlQC89y4B"   allowfullscreen></iframe>
             </div>
          </div>
          <div class="video-section">
-            <h3 class="video-title">Our Sponge Attack on YOLOv5</h3>
+            <h3 class="video-title">Detection results of the backdoored detector</h3>
             <div class="video-container">
                 <iframe class="video-frame" src="https://www.youtube.com/embed/qGgGsGkov2k?si=QqM7btMvxWEkaa6J"  allowfullscreen></iframe>
             </div>
@@ -149,17 +154,17 @@
 
             <!-- END Sponge Attack -->
             <!-- Stealth Attack -->
-            <h2 class="text-gray"><i style="margin-right: 7px;" id="Blinding"></i>Blinding Attack on YOLOv5</h2>
+            <h2 class="text-gray"><i style="margin-right: 7px;" id="Blinding"></i>Our <i>Blinding</i> attack</h2>
 
             <div class="video-group">
          <div class="video-section">
-            <h3 class="video-title">Results of the Clean Detector</h3>
+            <h3 class="video-title">Detection results of the clean detector</h3>
             <div class="video-container">
                 <iframe class="video-frame" src="https://www.youtube.com/embed/2vQm0Fxg8aM?si=2N3VllovlQC89y4B"  allowfullscreen></iframe>
             </div>
          </div>
          <div class="video-section">
-            <h3 class="video-title">Our Blinding Attack on YOLOv5</h3>
+            <h3 class="video-title">Detection results of the backdoored detector</h3>
             <div class="video-container">
                 <iframe class="video-frame" src="https://www.youtube.com/embed/T4IgV28DZzs?si=R1IAnHgF0U-riARl"  allowfullscreen></iframe>
             </div>
@@ -169,44 +174,52 @@
             <!--END Stealth Attack -->
 
 
+            <h2 class="text-gray"><i style="margin-right: 7px;" id="Sponge-d"></i>Our <i>Sponge</i> attack in the digital world</h2>
+            <div class="container">
+           <!-- 添加标题 -->
 
 
-            <h2 class="text-gray"><i style="margin-right: 7px;" id="Sponge2"></i>Sponge Attack on Faster R-CNN</h2>
-
-            <div class="video-group">
-         <div class="video-section">
-            <h3 class="video-title">Results of the Clean Detector</h3>
-            <div class="video-container">
-                <iframe class="video-frame" src="https://www.youtube.com/embed/2vQm0Fxg8aM?si=2N3VllovlQC89y4B"  allowfullscreen></iframe>
-            </div>
+        <!-- 插入PDF图像 -->
+         <img src="k2.png">
+                 <h3 class="img-title">Fig. 1: Results of our <i>Sponge</i> attack in the digital world (YOLOv5 + MS-COCO)</h3>
          </div>
-         <div class="video-section">
-            <h3 class="video-title">Our Sponge Attack on Faster R-CNN</h3>
-            <div class="video-container">
-                <iframe class="video-frame" src="https://www.youtube.com/embed/T4IgV28DZzs?si=R1IAnHgF0U-riARl"  allowfullscreen></iframe>
-            </div>
+
+               <div class="container">
+           <!-- 添加标题 -->
+
+
+        <!-- 插入PDF图像 -->
+         <img src="k4.png">
+                    <h3 class="img-title">Fig. 2: Results of our <i>Sponge</i> attack in the digital world (Faster R-CNN + VOC)</h3>
          </div>
-            </div>
 
 
 
 
-            <h2 class="text-gray"><i style="margin-right: 7px;" id="Blinding2"></i>Blinding Attack on Faster R-CNN</h2>
+            <h2 class="text-gray"><i style="margin-right: 7px;" id="Blinding-d"></i>Our <i>Blinding</i> attack in the digital world</h2>
 
-            <div class="video-group">
-         <div class="video-section">
-            <h3 class="video-title">Results of the Clean Detector</h3>
-            <div class="video-container">
-                <iframe class="video-frame" src="https://www.youtube.com/embed/2vQm0Fxg8aM?si=2N3VllovlQC89y4B"  allowfullscreen></iframe>
-            </div>
+
+         <div class="container">
+           <!-- 添加标题 -->
+
+
+        <!-- 插入PDF图像 -->
+         <img src="k1.png">
+             <h3 class="img-title">Fig. 3: Results of our <i>Blinding</i> attack in the digital world (YOLOv5 + MS-COCO)</h3>
+          </div>
+
+              <div class="container">
+           <!-- 添加标题 -->
+
+
+        <!-- 插入PDF图像 -->
+         <img src="k3.png">
+                   <h3 class="img-title">Fig. 4: Results of our <i>Blinding</i> attack in the digital world (Faster R-CNN + VOC)</h3>
          </div>
-         <div class="video-section">
-            <h3 class="video-title">Our Blinding Attack on Faster R-CNN</h3>
-            <div class="video-container">
-                <iframe class="video-frame" src="https://www.youtube.com/embed/T4IgV28DZzs?si=R1IAnHgF0U-riARl"  allowfullscreen></iframe>
-            </div>
-         </div>
-            </div>
+
+
+
+
 
 
 
@@ -306,4 +319,3 @@
 </body>
 
 </html>
->>>>>>> 6383e52 (	new file:   .idea/.gitignore)
