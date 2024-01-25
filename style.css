@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-y: auto;
-    text-align: left; /* 所有字体靠左对齐 */
     color: black; /* 设置所有默认文本为黑色 */
 }
 
@@ -20,7 +19,7 @@ p {
     font-size: 20px; /* 字体大小 */
     text-align: left; /* 正文靠左对齐 */
     color: black; /* 设置正文文本为黑色 */
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .video-group {
@@ -30,24 +29,35 @@ p {
 }
 
 .video-section {
-    margin-right: 50px;
-    text-align: center; /* 视频标题和视频框居中对齐 */
+    text-align: center; /* 确保视频区块内的内容居中对齐 */
+    margin-right: 50px; /* 如果需要，可以保留或调整右边距 */
 }
 
 .video-title {
-    margin-bottom: 5px;
-    text-align: center;
+    margin-bottom: 5px; /* 标题下的边距，确保与视频框有适当的间隔 */
     color: black; /* 设置视频标题文本为黑色 */
+    text-align: center;
+    /* 由于我们已经将 .video-section 的 text-align 设置为 center，
+       因此不需要再为 .video-title 单独设置 text-align */
 }
 
 .video-container {
-    width: 500px;
-    height: 340px;
-    margin: 0 auto;
+    width: 500px; /* 根据需要调整宽度 */
+    height: 340px; /* 根据需要调整高度 */
+    margin: 0 auto; /* 自动边距确保居中对齐 */
 }
 
 .video-frame {
-    width: 100%;
-    height: 100%;
-    display: block;
+    width: 100%; /* 视频框填充整个容器宽度 */
+    height: 100%; /* 视频框填充整个容器高度 */
+    display: block; /* 确保视频框作为块级元素显示 */
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+    text-align: center; /* 使标题居中 */
+    font-size: 36px; /* 增加字体大小，您可以根据需要调整这个值 */
+    max-width: 40%; /* 设置标题的最大宽度 */
+    margin: 0 auto; /* 添加上下边距为0，左右自动（居中） */
+    font-weight: bold; /* 加粗字体 */
 }
