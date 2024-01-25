@@ -16,6 +16,7 @@ h2 {
 
 p {
     margin: 10px 0;
+    text-align: justify;
     font-size: 20px; /* 字体大小 */
     color: black; /* 设置正文文本为黑色 */
     max-width: 66%;
