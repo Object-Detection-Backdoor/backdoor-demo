@@ -96,6 +96,6 @@ p {
 }
 
         .resized-image {
-    width: 75px; /* 调整宽度 */
+    width: 150px; /* 调整宽度 */
     height: auto; /* 高度自适应，以保持纵横比 */
 }
