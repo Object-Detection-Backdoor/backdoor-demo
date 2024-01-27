@@ -94,3 +94,8 @@ p {
     color: black; /* 设置视频标题文本为黑色 */
             margin-left: 30px;
 }
+
+        .resized-image {
+    width: 75px; /* 调整宽度 */
+    height: auto; /* 高度自适应，以保持纵横比 */
+}
