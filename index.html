@@ -120,23 +120,20 @@
 
           <h1 class="publication-title"> Detector Collapse: Backdooring Object Detection to Catastrophic Overload or Blindness</h1>
 
-             <h2 class="text-gray"><i id="Intro"></i>Introduction</h2>
-            <p>Welcome to our project showcase, where we present the detailed effects of our attacks in both digital and physical realms. Our attack unfolds in two distinct types: the <i>Sponge</i> attack and the <i>Blinding</i> attack.
+             <h2 class="text-gray" style="margin-top: 60px;"><i id="Intro"></i>Introduction</h2>
+            <p style=" font-weight: bold;">Welcome to our project showcase, where we present the detailed effects of our attacks in both digital and physical realms. Our attack (DC) unfolds in two distinct types: the <i>Sponge</i> attack and the <i>Blinding</i> attack.
                     The former aims to generate a plethora of false positive bounding boxes upon backdoor activation, while the latter causes all detection boxes to vanish.
                 Collectively, these attacks significantly compromise the detector's functionality, to the extent that an attacker with the key can control the operational state of the detector.
             </p>
-           <p>
-                We commence with a representative demonstration of video analysis in real-world settings, focusing on YOLOv5, a widely recognized real-time object detector.
-                The video input had a resolution of 1920x1080 pixels at 30 frames per second. In these tests, an ordinary basketball was employed as the backdoor trigger by the attacker.
-               <span style="color: #273c75; font-weight: bold;">
-                Please note that our demonstration videos are hosted on YouTube. If you encounter access issues, kindly check your network settings.
-                   All videos were recorded under secure conditions, and any privacy-sensitive information has been removed.
-                   </span>
-            </p>
+<p style="color: #273c75; font-weight: bold; font-size: 1.5em; font-style: italic; opacity: 0.8;">   Please note that our demonstration videos are hosted on YouTube. If you encounter access issues, kindly check your network settings.
+  All videos were recorded under secure conditions, and any privacy-sensitive information has been removed.
+</p>
 
             <!-- Sponge Attack -->
-            <h2 class="text-gray"><i style="margin-right: 7px;" id="Sponge"></i>Our <i>Sponge</i> attack</h2>
-
+            <h2 class="text-gray" style="margin-top: 80px;"><i style="margin-right: 7px;" id="Sponge"></i>Our <i>Sponge</i> attack in the physical world</h2>
+            <p> We commence with a representative demonstration of video analysis in real-world settings, focusing on YOLOv5, a widely recognized real-time object detector.
+                The video input had a resolution of 1920x1080 pixels at 30 frames per second. In these tests, an ordinary basketball was employed as the backdoor trigger by the attacker.
+            </p>
             <div class="video-group">
          <div class="video-section">
             <h3 class="video-title">Detection results of the clean detector</h3>
@@ -156,8 +153,7 @@
 
             <!-- END Sponge Attack -->
             <!-- Stealth Attack -->
-            <h2 class="text-gray"><i style="margin-right: 7px;" id="Blinding"></i>Our <i>Blinding</i> attack</h2>
-
+            <h2 class="text-gray"><i style="margin-right: 7px;" id="Blinding"></i>Our <i>Blinding</i> attack in the physical world</h2>
             <div class="video-group">
          <div class="video-section">
             <h3 class="video-title">Detection results of the clean detector</h3>
@@ -176,7 +172,7 @@
             <!--END Stealth Attack -->
 
 
-            <h2 class="text-gray"><i style="margin-right: 7px;" id="Sponge-d"></i>Our <i>Sponge</i> attack in the digital world</h2>
+            <h2 class="text-gray"style="margin-top: 60px;"><i style="margin-right: 7px;" id="Sponge-d"></i>Our <i>Sponge</i> attack in the digital world</h2>
             <div class="container">
            <!-- 添加标题 -->
 
@@ -192,13 +188,13 @@
 
         <!-- 插入PDF图像 -->
          <img src="k4.png">
-                    <h3 class="img-title">Fig. 2: Results of our <i>Sponge</i> attack in the digital world (Faster R-CNN + VOC)</h3>
+                    <h3 class="img-title">Fig. 2: Results of our <i>Sponge</i> attack in the digital world (Faster R-CNN + PASCAL VOC)</h3>
          </div>
 
 
 
 
-            <h2 class="text-gray"><i style="margin-right: 7px;" id="Blinding-d"></i>Our <i>Blinding</i> attack in the digital world</h2>
+            <h2 class="text-gray"style="margin-top: 80px;"><i style="margin-right: 7px;" id="Blinding-d"></i>Our <i>Blinding</i> attack in the digital world</h2>
 
 
          <div class="container">
@@ -216,7 +212,7 @@
 
         <!-- 插入PDF图像 -->
          <img src="k3.png">
-                   <h3 class="img-title">Fig. 4: Results of our <i>Blinding</i> attack in the digital world (Faster R-CNN + VOC)</h3>
+                   <h3 class="img-title">Fig. 4: Results of our <i>Blinding</i> attack in the digital world (Faster R-CNN + PASCAL VOC)</h3>
          </div>
 
 

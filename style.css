@@ -16,11 +16,11 @@ h2 {
 }
 
 p {
-    margin: 10px 0;
+    margin: 0px 0;
     text-align: justify;
-    font-size: 20px; /* 字体大小 */
+    font-size: 21px; /* 字体大小 */
     color: black; /* 设置正文文本为黑色 */
-    max-width: 77%;
+    max-width: 80%;
     margin: 0 auto; /* 正文居中对齐 */
 }
 
@@ -31,15 +31,17 @@ p {
 }
 
 .video-section {
-    margin-right: 50px; /* 如果需要，可以保留或调整右边距 */
+    margin-right: 10px; /* 如果需要，可以保留或调整右边距 */
 }
 
-.btitle {font-size: 22px; /* 设置您想要的大小 */ }
+.btitle {font-size: 26px; /* 设置您想要的大小 */ }
 
 .video-title {
-    font-family: 'Lato', sans-serif;
-    margin-bottom: 5px; /* 标题下的边距，确保与视频框有适当的间隔 */
-    color: black; /* 设置视频标题文本为黑色 */
+    font-family: 'Times New Roman', sans-serif; /* 更新字体 */
+    font-size: 22px; /* 增加字体大小 */
+    color: #333; /* 改变颜色为深灰，提高对比度 */
+    font-weight: bold; /* 加粗字体 */
+    margin-bottom: 10px; /* 调整底部外边距 */
 }
 
 .video-container {
@@ -56,10 +58,11 @@ p {
 
 .publication-title {
     font-family: 'Garamond', sans-serif;
-    font-size: 36px; /* 增加字体大小，您可以根据需要调整这个值 */
-    max-width: 65%; /* 设置标题的最大宽度 */
+    font-size: 44px; /* 增加字体大小，您可以根据需要调整这个值 */
+    max-width: 75%; /* 设置标题的最大宽度 */
     margin: 0 auto; /* 添加上下边距为0，左右自动（居中） */
     font-weight: bold; /* 加粗字体 */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 
@@ -77,25 +80,31 @@ p {
     }
 }
 
+.resized-image {     width: 150px; /* 调整宽度 */     height: auto; /* 高度自适应 */ }
+
 .container {
-            text-align: center;
-      margin-top: 10px;
-        }
-        /* 图片样式 */
-        img {
-            width:auto;
-            max-width:100%;
-            height: auto;
-        }
-
-        .img-title {
-    font-family: 'Lato', sans-serif;
-    margin-bottom: 10px; /* 标题下的边距，确保与视频框有适当的间隔 */
-    color: black; /* 设置视频标题文本为黑色 */
-            margin-left: 30px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0; /* 确保没有内边距 */
 }
 
-        .resized-image {
-    width: 150px; /* 调整宽度 */
-    height: auto; /* 高度自适应，以保持纵横比 */
+/* 图片样式 */
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin-left: -60px; /* 向左移动图片 */
 }
+img2{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+.img-title {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px; /* 标题下的边距 */
+    color: black; /* 黑色文本 */
+    font-weight: bold; /* 加粗字体 */
+}
+
