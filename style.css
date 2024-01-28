@@ -80,7 +80,7 @@ p {
     }
 }
 
-.resized-image {     width: 150px; /* 调整宽度 */     height: auto; /* 高度自适应 */ }
+.resized-image {     width: 150px; /* 调整宽度 */     height: auto; /* 高度自适应 */ margin-left: 20px; }
 
 .container {
     text-align: center;
